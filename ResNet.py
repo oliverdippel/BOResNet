@@ -1,7 +1,9 @@
 import torch.nn as nn
 import math
 
+
 class ResNet(nn.Module):
+
     def __init__(self, img_size, channel_in=64, channel_out=512, bb_chain=(3, 4, 6, 3), bb_depth=2, out_classes=10):
         """
         The Residual Network is based on:
